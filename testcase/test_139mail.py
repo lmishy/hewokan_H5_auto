@@ -7,7 +7,7 @@ import urllib
 from bs4 import BeautifulSoup
 
 
-@allure.step("中国移动139邮箱")
+@allure.step("中国移动139邮箱登录")
 def test_139mail():
     try:
         url = "http://html5.mail.10086.cn/?Adapt-Flag=on&cguid=0939000421196&mtime=32"
