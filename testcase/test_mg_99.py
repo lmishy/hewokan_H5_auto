@@ -20,7 +20,7 @@ def test_mg99():
         print e
         raise Exception('H5页面请求出错，请检查！')
 
-    assert res.getcode() == 20023
+    assert res.getcode() == 200
     assert u'2018年9.9开通芒果会员' == test_result
 
 
