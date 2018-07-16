@@ -19,7 +19,7 @@ def test_mgVIP():
         print e
         raise Exception('H5页面请求出错，请检查！')
 
-    assert res.getcode() == 2003
+    assert res.getcode() == 200
     assert u'芒果TV特惠流量包' == test_result
 
 
