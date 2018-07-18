@@ -8,7 +8,7 @@ import urllib
 from bs4 import BeautifulSoup
 
 
-@allure.step("世界杯咪咕下载页")
+@allure.step("咪咕下载页")
 def test_miguxiazai():
     try:
         url = "http://m.miguvideo.com/publish/h5/page/108.html"
@@ -21,7 +21,7 @@ def test_miguxiazai():
         raise Exception('H5页面请求出错，请检查！')
 
     assert res.getcode() == 200
-    assert u'看世界杯' in test_result
+    assert u'咪咕视频 让生活更有戏' in test_result
 
 
 if __name__ == "__main__":
